@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Nepal | About</title>
+  <style>
+    :root{--bg:#000;--fg:#fff;--muted:#bdbdbd;--card:#0b0b0b;--line:#222}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;background:var(--bg);color:var(--fg)}
+    a{text-decoration:none;color:inherit}
+
+    header{display:grid;grid-template-columns:1fr auto;align-items:center;padding:22px 7vw;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.6px}
+    nav{display:flex;gap:22px}
+    nav a{font-size:14px;color:var(--muted)}
+    nav a:hover{color:var(--fg)}
+
+    main{max-width:1200px;margin:70px auto 0;padding:0 7vw}
+
+    h1{font-size:36px;margin-bottom:18px}
+    .sub{color:var(--muted);max-width:720px;margin-bottom:40px}
+
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+
+    .card{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--card)}
+    .card h2{margin:0 0 16px;font-size:20px}
+    .card p{margin-bottom:14px;color:var(--muted);font-size:14px;line-height:1.6}
+
+    .info-list{list-style:none;padding:0;margin:0}
+    .info-list li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0;color:var(--muted);font-size:14px}
+
+    .focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:20px}
+    .focus-box{padding:18px;border-radius:14px;border:1px solid var(--line);background:#070707}
+    .focus-box h3{margin:0 0 6px;font-size:15px}
+    .focus-box p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{margin-top:90px;padding:26px 7vw;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;align-items:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.about-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Manoj Nepal</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Me</h1>
+    <p class="sub">I am an 18-year-old student and job seeker from Kathmandu, Nepal. I’m focused on building a solid foundation in cybersecurity, frontend development, and digital problem solving with a long-term vision of teaching and freelancing.</p>
+
+    <div class="about-grid">
+
+      <div class="card">
+        <h2>My Journey</h2>
+        <p>I started my tech journey with curiosity about how the internet works and how systems are protected. Over time, that curiosity slowly turned into a serious interest in cybersecurity and ethical hacking.</p>
+        <p>Alongside security, I developed an interest in clean web interfaces and learned frontend development to better understand how real-world websites function.</p>
+        <p>My long-term plan is to grow as a cybersecurity enthusiast, build a personal brand through YouTube and content creation, and take up freelance and internship opportunities internationally.</p>
+      </div>
+
+      <div class="card">
+        <h2>Quick Info</h2>
+        <ul class="info-list">
+          <li><span>Name</span><span>Manoj Nepal</span></li>
+          <li><span>Age</span><span>18</span></li>
+          <li><span>Location</span><span>Kathmandu, Nepal</span></li>
+          <li><span>Status</span><span>Student & Job Seeker</span></li>
+          <li><span>Focus</span><span>Cybersecurity & Frontend</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="focus">
+      <div class="focus-box">
+        <h3>Cybersecurity</h3>
+        <p>Learning networks, security mindset, and ethical hacking fundamentals.</p>
+      </div>
+      <div class="focus-box">
+        <h3>Frontend Development</h3>
+        <p>Building responsive, clean, and user-friendly interfaces.</p>
+      </div>
+      <div class="focus-box">
+        <h3>Content Creation</h3>
+        <p>Future YouTube channel to document learning and teach others.</p>
+      </div>
+      <div class="focus-box">
+        <h3>Freelancing</h3>
+        <p>Open for beginner projects, internships, and practical experience.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div>© 2025 Manoj Nepal</div>
+    <div>Always learning. Always improving.</div>
+  </footer>
+
+</body>
+</html>

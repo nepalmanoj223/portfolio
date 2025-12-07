@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Nepal | Skills</title>
+  <style>
+    :root{--bg:#000;--fg:#fff;--muted:#bdbdbd;--card:#0b0b0b;--line:#222;--accent:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;background:var(--bg);color:var(--fg)}
+    a{text-decoration:none;color:inherit}
+
+    header{display:grid;grid-template-columns:1fr auto;align-items:center;padding:22px 7vw;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.6px}
+    nav{display:flex;gap:22px}
+    nav a{font-size:14px;color:var(--muted)}
+    nav a:hover{color:var(--fg)}
+
+    main{max-width:1200px;margin:70px auto;padding:0 7vw}
+
+    h1{font-size:36px;margin-bottom:20px}
+    .sub{color:var(--muted);margin-bottom:40px;max-width:720px}
+
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .skill-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+    .skill-card h3{margin:0;font-size:16px}
+    .progress-bar{background:var(--line);height:8px;border-radius:8px;overflow:hidden}
+    .progress{height:100%;background:var(--accent);width:0%;transition:width 1.2s ease-in-out}
+    .skill-card p{margin:0;font-size:13px;color:var(--muted)}
+
+    footer{margin-top:90px;padding:26px 7vw;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;align-items:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.skills-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Manoj Nepal</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Skills</h1>
+    <p class="sub">A showcase of technical and soft skills I have developed over time as I pursue cybersecurity, web development, and content creation.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="progress-bar"><div class="progress" style="width:75%"></div></div>
+        <p>HTML, CSS, responsive design, JS basics, UI/UX prototyping.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <div class="progress-bar"><div class="progress" style="width:65%"></div></div>
+        <p>Beginner scripting, automation, security tools prep.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Cybersecurity</h3>
+        <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+        <p>Network basics, security mindset, ethical hacking foundations.</p>
+      </div>
+      <div class="skill-card">
+        <h3>MS Office</h3>
+        <div class="progress-bar"><div class="progress" style="width:80%"></div></div>
+        <p>Reports, presentations, spreadsheet work.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Graphic Design</h3>
+        <div class="progress-bar"><div class="progress" style="width:60%"></div></div>
+        <p>Visual composition for thumbnails, logos, social posts.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+        <p>Leadership, communication, learning ability, discipline.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div>© 2025 Manoj Nepal</div>
+    <div>Always learning. Always improving.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+      const progresses=document.querySelectorAll('.progress');
+      progresses.forEach(p=>{const width=p.style.width;p.style.width='0';setTimeout(()=>{p.style.width=width},100)});
+    });
+  </script>
+
+</body>
+</html>
